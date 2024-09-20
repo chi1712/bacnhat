@@ -1,0 +1,26 @@
+
+
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Tính Phương Trình Bậc Nhất:</h1>
+<input type="text" id="a">
+<input type="text" id="b">
+<button onclick="solveEquation()">Giải</button>
+
+<p id="solution"></p>
+
+<script>
+function solveEquation() {
+    var a = parseFloat(document.getElementById("a").value);
+    var b = parseFloat(document.getElementById("b").value);
+
+    var solution = -b / a;
+
+    document.getElementById("solution").innerHTML = "Nghiệm của phương trình là: " + solution;
+}
+</script>
+
+</body>
+</html>
+
